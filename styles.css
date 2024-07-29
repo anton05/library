@@ -1,0 +1,142 @@
+body {
+  font-family: "Bona Nova SC", serif;
+  background-color: #053d25;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+}
+
+.header img {
+  max-width: 100%;
+  height: auto;
+  max-height: 150px;
+  margin-bottom: 20px;
+  transition: transform 0.5s;
+}
+
+.header img:hover {
+  transform: scale(1.03);
+  transition: transform 0.5s;
+}
+
+.info-section,
+.working-hours,
+.social-media {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.working-hours h2,
+.social-media h2,
+.info-section h2 {
+  color: #7e6015;
+  margin-top: 0;
+}
+
+h2 {
+  color: #34495e;
+  font-size: 1.5em;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1em;
+  color: #20322a;
+  margin: 10px 0;
+}
+
+a {
+  color: #20322a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: table;
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.social-links img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  transition: transform 0.3s;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+.social-links a {
+  color: #20322a;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: auto;
+    padding: 20px 100px;
+  }
+
+  .info-section,
+  .working-hours,
+  .social-media {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  a {
+    font-size: 1em;
+  }
+
+  .social-links a {
+    font-size: 1em;
+  }
+}
