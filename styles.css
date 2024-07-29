@@ -15,11 +15,11 @@ body {
   width: 100%;
 }
 
-.header {
+.header-logo {
   text-align: center;
 }
 
-.header img {
+.header-logo img {
   max-width: 100%;
   height: auto;
   max-height: 150px;
@@ -27,14 +27,12 @@ body {
   transition: transform 0.5s;
 }
 
-.header img:hover {
+.header-logo img:hover {
   transform: scale(1.03);
   transition: transform 0.5s;
 }
 
-.info-section,
-.working-hours,
-.social-media {
+.info-section {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -45,8 +43,6 @@ body {
   text-align: left;
 }
 
-.working-hours h2,
-.social-media h2,
 .info-section h2 {
   color: #7e6015;
   margin-top: 0;
@@ -114,13 +110,11 @@ a:hover {
     padding: 20px 100px;
   }
 
-  .header img {
+  .header-logo img {
     margin-bottom: 0;
   }
 
-  .info-section,
-  .working-hours,
-  .social-media {
+  .info-section {
     padding: 30px;
   }
 
