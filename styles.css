@@ -114,6 +114,10 @@ a:hover {
     padding: 20px 100px;
   }
 
+  .header img {
+    margin-bottom: 0;
+  }
+
   .info-section,
   .working-hours,
   .social-media {
