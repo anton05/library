@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Національна бібліотека України ім. Ярослава Мудрого</title>
-    <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="icons/logo.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,8 +11,151 @@
       href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+
+    <style>
+      body {
+        font-family: "Bona Nova SC", serif;
+        background-color: #053d25;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+
+      .header-logo {
+        text-align: center;
+      }
+
+      .header-logo img {
+        max-width: 100%;
+        height: auto;
+        max-height: 150px;
+        margin-bottom: 20px;
+        transition: transform 0.5s;
+      }
+
+      .header-logo img:hover {
+        transform: scale(1.03);
+        transition: transform 0.5s;
+      }
+
+      .info-section {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 600px;
+        text-align: left;
+      }
+
+      .info-section h2 {
+        color: #7e6015;
+        margin-top: 0;
+      }
+
+      h2 {
+        color: #34495e;
+        font-size: 1.5em;
+        border-bottom: 2px solid #ecf0f1;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1em;
+        color: #20322a;
+        margin: 10px 0;
+      }
+
+      a {
+        color: #20322a;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .social-links {
+        display: table;
+        margin: 0 auto;
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .social-links li {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+      }
+
+      .social-links img {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+        transition: transform 0.3s;
+      }
+
+      .social-links img:hover {
+        transform: scale(1.1);
+      }
+
+      .social-links a {
+        color: #20322a;
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        transition: color 0.3s;
+      }
+
+      @media (max-width: 700px) {
+        .container {
+          width: auto;
+          padding: 20px 100px;
+        }
+
+        .header-logo img {
+          margin-bottom: 0;
+        }
+
+        .info-section {
+          padding: 30px;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+
+        h2 {
+          font-size: 1.3em;
+        }
+
+        p {
+          font-size: 0.9em;
+        }
+
+        a {
+          font-size: 1em;
+        }
+
+        .social-links a {
+          font-size: 1em;
+        }
+      }
+    </style>
   </head>
-  
+
   <body>
     <div class="header-logo">
       <a href="https://nlu.org.ua/" target="_blank">
@@ -27,27 +169,28 @@
         <ul class="social-links">
           <li>
             <a href="https://www.facebook.com/nlu.org.ua/" target="_blank">
-              <img src="icons/facebook.png" alt="Facebook Icon" /> Facebook
+              <img src="icons/facebook.svg" alt="Facebook Icon" /> Facebook
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/mudryilibrary" target="_blank">
-              <img src="icons/instagram.png" alt="Instagram Icon" /> Instagram
+              <img src="icons/instagram.svg" alt="Instagram Icon" /> Instagram
             </a>
           </li>
           <li>
             <a href="https://lnkd.in/eNU5EccC" target="_blank">
-              <img src="icons/linkedin.png" alt="LinkedIn Icon" /> LinkedIn
+              <img src="icons/linkedin.svg" alt="LinkedIn Icon" /> LinkedIn
             </a>
           </li>
           <li>
             <a href="https://t.me/mudryilibrary" target="_blank">
-              <img src="icons/telegram.png" alt="Telegram Icon" /> Telegram
+              <img src="icons/telegram.svg" alt="Telegram Icon" /> Telegram
             </a>
           </li>
+
           <li>
             <a href="https://youtube.com/@mudryilibrary" target="_blank">
-              <img src="icons/youtube.png" alt="YouTube Icon" /> YouTube
+              <img src="icons/youtube.svg" alt="YouTube Icon" /> YouTube
             </a>
           </li>
         </ul>
